@@ -88,7 +88,7 @@ export default function App() {
 
 
   useEffect(function(){
-    fetch("https://react-quiz-24nwqwbip-bakhits-projects.vercel.app/questions.json")
+    fetch("https://github.com/bakhiet19/React_Quiz/public/data/questions.json")
     .then((res)=> res.json())
     .then((data) => dispatch({type : "dataRecieved" , payload : data}))
     .catch((error) => dispatch({type : "Error"}))
