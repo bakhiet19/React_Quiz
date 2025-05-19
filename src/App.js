@@ -88,7 +88,7 @@ export default function App() {
 
 
   useEffect(function(){
-    fetch("http://localhost:3000/questions")
+    fetch("/data/questions.json")
     .then((res)=> res.json())
     .then((data) => dispatch({type : "dataRecieved" , payload : data}))
     .catch((error) => dispatch({type : "Error"}))
