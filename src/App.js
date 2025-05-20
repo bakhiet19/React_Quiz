@@ -88,7 +88,7 @@ export default function App() {
 
 
   useEffect(function(){
-    fetch("http://jsonblob.com/1374497613067509760")
+    fetch("https://jsonblob.com/1374497613067509760")
     .then((res)=> res.json())
     .then((data) => dispatch({type : "dataRecieved" , payload : data}))
     .catch((error) => dispatch({type : "Error"}))
