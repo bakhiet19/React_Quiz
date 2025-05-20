@@ -88,7 +88,7 @@ export default function App() {
 
 
   useEffect(function(){
-    fetch("https://jsonblob.com/1374497613067509760")
+    fetch("https://raw.githubusercontent.com/bakhiet19/React_Quiz/refs/heads/main/public/data/questions.json")
     .then((res)=> res.json())
     .then((data) => dispatch({type : "dataRecieved" , payload : data}))
     .catch((error) => dispatch({type : "Error"}))
